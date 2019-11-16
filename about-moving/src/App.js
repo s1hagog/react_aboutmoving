@@ -3,11 +3,6 @@ import ReactDOM from 'react-dom';
 import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 import {Provider} from 'react-redux';
 
-
-
-
-import 'bootstrap/dist/css/bootstrap.min.css'
-
 import Layout from './layouts/Layout';
 import Main from './pages/Main';
 import PageNotFound from './pages/PageNotFound';
@@ -23,6 +18,25 @@ import Comments from './pages/Comments';
 import Comment from './pages/Comment';
 
 import store from './store';
+
+
+//CSS
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/style.css';
+import './css/animate.css';
+import './css/font-awesome.min.css';
+import './css/magnific-popup.css';
+import './css/owl.carousel.min.css';
+import './css/responsive.css';
+
+///External JS
+import './js/active';
+import './js/jquery-2.2.4.min.js';
+import './js/map-active';
+import './js/plugins';
+import './js/popper.min.js';
+import './js/bootstrap.min.js';
 
 
 ReactDOM.render(

@@ -2,6 +2,7 @@ import React from 'react';
 // import {Link} from 'react-router';
 import Menu from '../components/Menu';
 import MenuItem from '../components/MenuItem';
+import Footer from '../components/Footer';
 
 
 export default class Layout extends React.Component{
@@ -23,6 +24,9 @@ export default class Layout extends React.Component{
     render(){
         return(
             <>
+                <div id="preloader">
+                    <div className="mosh-preloader"></div>
+                </div>
                 <Menu brand={this.brand}>
                     <MenuItem href="/" active={this.isActiveMain('/')}>Main</MenuItem>
                     <MenuItem href="/moving" active={this.isActiveMain('moving')} dropdown dropdownMenu="moving">Moving</MenuItem>
@@ -43,10 +47,7 @@ export default class Layout extends React.Component{
                         </div>
                     </div>
                 </div>
-                <div className="card-footer">
-                    &copy; About Moving 2019
-                    <pre>Developed by Alexander Moshak</pre>
-                </div>
+                <Footer></Footer>
             </>
         );
     }
