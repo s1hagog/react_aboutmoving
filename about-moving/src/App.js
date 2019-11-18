@@ -32,12 +32,12 @@ import './css/responsive.css';
 
 ///External JS
 import './js/active';
-import './js/jquery-2.2.4.min.js';
-import './js/map-active';
-import './js/plugins';
-import './js/popper.min.js';
-import './js/bootstrap.min.js';
-
+import 'jquery';
+//import './js/map-active';
+//import './js/plugins';
+import 'popper.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import 'wow.js';
 
 ReactDOM.render(
 <Provider store={store}>

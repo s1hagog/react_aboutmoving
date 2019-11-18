@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require('webpack');
 
 module.exports = {
     entry: path.resolve(__dirname, 'src/App.js'),
@@ -28,6 +29,15 @@ module.exports = {
             }
         ]
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        }),
+        new webpack.ProvidePlugin({
+            WOW: 'wow.js'
+        })
+    ],
     devServer: {
         contentBase: path.resolve(__dirname, 'dist'),
         historyApiFallback: true
