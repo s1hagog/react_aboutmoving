@@ -44,6 +44,9 @@ import 'wow.js';
 ReactDOM.render(
 <Provider store={store}>
     <Router history={browserHistory}>
+        <Route path="/application" component={LayoutApplication}>
+
+        </Route>
         <Route path="/" component={Layout}>
             <IndexRoute component={Main}></IndexRoute>
             <Route path="users" component={Users}>
