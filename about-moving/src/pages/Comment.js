@@ -4,7 +4,6 @@ import {connect} from 'react-redux';
 
 import {fetchComment} from '../actions/commentsAction';
 import CommentCard from '../components/Comment';
-
 // export default class Comment extends Component {
 //     constructor(props){
 //         super(props);

@@ -4,6 +4,8 @@ import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 import {Provider} from 'react-redux';
 
 import Layout from './layouts/Layout';
+import LayoutApplication from './layouts/LayoutApplication';
+
 import Main from './pages/Main';
 import PageNotFound from './pages/PageNotFound';
 

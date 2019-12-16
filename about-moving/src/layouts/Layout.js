@@ -34,18 +34,8 @@ export default class Layout extends React.Component{
                     <MenuItem href="/posts" active={this.isActive('posts')}>Cases</MenuItem>
                     <MenuItem href="/comments" active={this.isActive('comments')}>Calculator</MenuItem>
                 </Menu>
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-2" style={{background: 'red'}}>
-                            
-                        </div>
-                        <div className="col-8">
-                            {this.props.children}
-                        </div>
-                        <div className="col-2" style={{background: 'green'}}>
-
-                        </div>
-                    </div>
+                <div className="container">
+                    {this.props.children}
                 </div>
                 <Footer></Footer>
             </>
