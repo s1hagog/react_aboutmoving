@@ -9,6 +9,8 @@ import LayoutApplication from './layouts/LayoutApplication';
 import Main from './pages/Main';
 import PageNotFound from './pages/PageNotFound';
 
+import Application from './pages/Application';
+import Q1Main from './components/MainApplication/Q1/Q1Main';
 
 import Users from './pages/Users';
 import User from './pages/User';
@@ -45,7 +47,8 @@ ReactDOM.render(
 <Provider store={store}>
     <Router history={browserHistory}>
         <Route path="/application" component={LayoutApplication}>
-
+            <IndexRoute component={Application}></IndexRoute>
+            <Route path="residence-type" component={Q1Main}></Route>
         </Route>
         <Route path="/" component={Layout}>
             <IndexRoute component={Main}></IndexRoute>

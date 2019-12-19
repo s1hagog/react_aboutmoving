@@ -1,4 +1,5 @@
 import React, {Component}  from 'react';
+import {Link} from 'react-router';
 
 
 const MainApplication = (props) => {
@@ -6,7 +7,7 @@ const MainApplication = (props) => {
         <div className="row">
             <div className="col-12">
                 <h2>Lets start the journey into the app</h2>
-                <button className="btn mosh-btn">Start</button>
+                <Link className="btn mosh-btn" to="/application/residence-type">Start</Link>
             </div>
         </div>
     )
