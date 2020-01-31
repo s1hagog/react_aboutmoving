@@ -46,10 +46,6 @@ import 'wow.js';
 ReactDOM.render(
 <Provider store={store}>
     <Router history={browserHistory}>
-        <Route path="/application" component={LayoutApplication}>
-            <IndexRoute component={Application}></IndexRoute>
-            <Route path="residence-type" component={Q1Main}></Route>
-        </Route>
         <Route path="/" component={Layout}>
             <IndexRoute component={Main}></IndexRoute>
             <Route path="users" component={Users}>
@@ -60,6 +56,9 @@ ReactDOM.render(
             </Route>
             <Route path="comments" component={Comments}>
                 <Route path=":commentId" component={Comment}/>
+            </Route>
+            <Route path="application" component={Application}>
+                
             </Route>
             <Route path="*" component={PageNotFound}></Route>
         </Route>
